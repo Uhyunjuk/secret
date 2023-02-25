@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인생네컷 프레임 만들기</title>
+    <style>
+        /* @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+        } */
+
+        body{
+            font-family: "궁서체";
+            --margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #484848;
+            --background-image: url(./background.png);
+        }
+        .container{
+            width: 390px;
+            align-items: center;
+            background-color: #212121;
+            height: 100%;
+        }
+        .photo-area{
+            margin-top: 30px;
+            width: 357px;
+            margin-left: 16px;
+
+        }
+        .photo-frame{
+            background-color: white;
+            height: 200px;
+            margin: 15px 20px;
+            --width: 330px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            --height: 100px;
+        }
+        .f-title{
+            font-size: 25px;
+            font-weight: 900;
+            color: white;
+        }
+        .f-date{
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+        }
+        #image1 {
+            background-image: url(./1.jpeg);
+            background-position: center 50%;
+        }
+        #image2{
+            background-image: url(./2.jpeg);
+        }
+        #image3{
+            background-image: url(./3.jpeg);
+            background-position: center 70%;
+        }
+        #image4{
+            background-image: url(./4.jpeg);
+        }
+        .photo-frame{
+            background-size: cover;
+            background-position: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-area">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo-description"></span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc1" class="photo-description"></span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc1" class="photo-description"></span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc1" class="photo-description"></span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">욱겨서 사망하다.</p>
+            <p class="f-date">1999.xx.xx ~ 2022.12.xx</p>
+        </div>
+    </div>
+</body>
+</html>
